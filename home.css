@@ -52,8 +52,7 @@ button
 	border-radius: 7px;
 	box-shadow: 2px 2px 5px #888888;
 	margin: 80px auto;
-	transition: color 2s ease;
-	transition: box-shadow 1s;
+	transition: color 2s ease, box-shadow 1s;
 	width: 750px;
 }
 
