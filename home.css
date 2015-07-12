@@ -28,9 +28,18 @@ h1
 
 input
 {
+	border: 1px solid gray;
+	border-radius: 5px;
 	font-size: 20px;
 	height: 50px;
+	transition: box-shadow 0.5s;
 	width: 1000px;
+}
+
+input:focus
+{
+	outline: 0;
+	box-shadow: 0px 0px 5px #003399;
 }
 
 button
@@ -44,12 +53,15 @@ button
 	box-shadow: 2px 2px 5px #888888;
 	margin: 80px auto;
 	transition: color 2s ease;
+	transition: box-shadow 1s;
 	width: 750px;
 }
 
 button:hover
 {
+	box-shadow: 2px 2px 10px #003399;
 	color: #003399;
+	cursor: pointer;
 }
 
 @font-face
