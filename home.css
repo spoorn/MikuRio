@@ -8,6 +8,8 @@
 
 body
 {
+	background-image: url("blueocean.jpg");
+	background-size: cover;
 	text-align: center;
 }
 
@@ -18,15 +20,10 @@ body, button
 
 h1
 {
-	color: black;
+	color: #CCFFFF;
 	font-size: 90px;
 	font-weight: normal;
 	margin: 200px;
-}
-
-h1:focus
-{
-	color: #003399;
 }
 
 input
@@ -46,7 +43,7 @@ button
 	border-radius: 7px;
 	box-shadow: 2px 2px 5px #888888;
 	margin: 80px auto;
-	transition: color 2s;
+	transition: color 2s ease;
 	width: 750px;
 }
 
