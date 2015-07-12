@@ -11,9 +11,22 @@ body
 	text-align: center;
 }
 
+body, button
+{
+	font-family: 'Waltograph', sans-serif;
+}
+
 h1
 {
+	color: black;
+	font-size: 90px;
+	font-weight: normal;
 	margin: 200px;
+}
+
+h1:focus
+{
+	color: #003399;
 }
 
 input
@@ -25,9 +38,33 @@ input
 
 button
 {
+	background-color: #99CCFF;
 	display: block;
+	font-size: 30px;
 	height: 50px;
+	border: none;
+	border-radius: 7px;
+	box-shadow: 2px 2px 5px #888888;
 	margin: 80px auto;
+	transition: color 2s;
 	width: 750px;
+}
 
+button:hover
+{
+	color: #003399;
+}
+
+@font-face
+{
+	font-family: 'Waltograph';
+	src: url('waltograph/Waltograph/waltograph42.otf');
+	src: url('waltograph/Waltograph/waltograph42.ttf');
+}
+
+@font-face
+{
+	font-family: 'Waltograph';
+	src: url('waltograph/Waltograph UI Bold/waltographUI.ttf');
+	font-weight: bold;
 }
