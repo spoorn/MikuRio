@@ -53,7 +53,7 @@ button
 	box-shadow: 2px 2px 5px #888888;
 	margin: 80px auto;
 	transition: color 2s ease, box-shadow 1s;
-	width: 750px;
+	width: 600px;
 }
 
 button:hover
