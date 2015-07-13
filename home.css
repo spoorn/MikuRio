@@ -26,6 +26,11 @@ h1
 	margin: 200px;
 }
 
+a
+{
+	text-decoration: none;
+}
+
 input
 {
 	border: 1px solid gray;
