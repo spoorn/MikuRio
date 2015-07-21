@@ -21,14 +21,36 @@ def read_file():
 	global COURSE_LINKS
 	COURSE_LINKS = [line.rstrip('\n') for line in open('CourseEvalLinks.txt')]
 
+def traverse_courses():
+	"""
+	Go through all the courses available in data.
+	"""
+
+
+def extract_data(url):
+	"""
+	Get the Course Information from given course website.
+	"""
+	browser.get(url)
+	course_name = browser.find_element_by_tag_name('h1').text
+	teacher_name = browser.find_element_by_tag_name('h2').text
+	course_info = browser.find_element_by_tag_name('table').text
+
+	print(course_name)
+	print(teacher_name)
+	print(course_info, end = '\n\n')
 
 def main():
 
 	retrieve.login(retrieve.get_userpass())
 	retrieve.set_up_directory("C:\\Users\\Leo\\Documents\\MikuRio\\CourseEvalRetriever")
 	
+	read_file()
+	
+	for course in COURSE_LINKS[0:10]:
+		extract_data(course)
 		
 
-	
+	browser.quit()	
 if __name__ == '__main__':
 	main()
