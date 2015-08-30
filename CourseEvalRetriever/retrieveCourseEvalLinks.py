@@ -74,7 +74,7 @@ def log_links(links):
 
 			
 def main():
-	set_up_directory("C:\\Users\\Leo\\Documents\\MikuRio\\CourseEvalRetriever")
+	set_up_directory("C:\\Users\\Leo\\Envs\\MikuRio\\MikuRio\\CourseEvalRetriever")
 	
 	login(get_userpass())
 	
