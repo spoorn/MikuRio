@@ -43,7 +43,7 @@ def extract_data(url):
 def main():
 
 	retrieve.login(retrieve.get_userpass())
-	retrieve.set_up_directory("C:\\Users\\Leo\\Documents\\MikuRio\\CourseEvalRetriever")
+	retrieve.set_up_directory("C:\\Users\\Leo\\Envs\\MikuRio\\MikuRio\\CourseEvalRetriever")
 	
 	read_file()
 	
