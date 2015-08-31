@@ -44,11 +44,11 @@
 
 	function watchVideo()
 	{
-		$("intro").style.display = "block";
+		$("intro").style.display = "initial";
 		$("mainpage").style.display = "none";
-		$("song").currentTime = 0;
 		$("vid").play();
 		$("song").pause();
+		$("song").currentTime = 0;
 	}
 }
 )();
