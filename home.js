@@ -8,10 +8,18 @@
 
 (function()
 {
+	var player;
+
 	function $(id) { return document.getElementById(id); }
 
 	window.onload = function()
 	{
+		// 2. This code loads the IFrame Player API code asynchronously.
+		//var tag = document.createElement('script');
+		//tag.src = "https://www.youtube.com/iframe_api";
+		//var firstScriptTag = document.getElementsByTagName('head')[0];
+		//firstScriptTag.appendChild(tag);
+
 		document.querySelector("button").onmouseover = changeColors;
 		document.querySelector("button").onmouseleave = changeBackColors;
 		$("skip").onclick = skipVideo;
@@ -35,8 +43,9 @@
 	function skipVideo()
 	{
 		$("intro").style.display = "none";
-		$("vid").pause();
-		$("vid").currentTime = 0;
+		//$("vid").pause();
+		//$("vid").currentTime = 0;
+		player.stopVideo();
 		$("mainpage").style.display = "initial";
 		$("song").play();
 		document.body.style.backgroundImage = "url('kaori2.jpg')";
@@ -46,9 +55,34 @@
 	{
 		$("intro").style.display = "initial";
 		$("mainpage").style.display = "none";
-		$("vid").play();
+		player.playVideo();
+		//$("vid").play();
 		$("song").pause();
 		$("song").currentTime = 0;
+	}
+
+	// 3. This function creates an <iframe> (and YouTube player)
+	//    after the API code downloads.
+	window.onYouTubeIframeAPIReady = function() 
+	{
+		player = new YT.Player('player', 
+		{
+			events: 
+			{
+				'onReady': onPlayerReady,
+			}
+		});
+	}
+
+	// 4. The API will call this function when the video player is ready.
+	function onPlayerReady(event)
+	{
+		event.target.playVideo();
+	}
+	
+	function stopVideo() 
+	{
+		player.stopVideo();
 	}
 }
 )();
