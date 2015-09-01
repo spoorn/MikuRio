@@ -33,6 +33,17 @@ video
     background-size: cover; 
 }
 
+iframe
+{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+}
+
 #mainpage
 {
 	display: none;
