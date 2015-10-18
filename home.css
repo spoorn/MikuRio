@@ -9,6 +9,7 @@
 body
 {
 	background-size: cover;
+	background-image: url('IMG_0815.jpg'); /* Because took out video */
 	text-align: center;
 }
 
@@ -46,7 +47,7 @@ iframe
 
 #mainpage
 {
-	display: none;
+	display: initial;
 }
 
 h3

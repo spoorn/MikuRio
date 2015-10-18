@@ -22,8 +22,8 @@
 
 		document.querySelector("button").onmouseover = changeColors;
 		document.querySelector("button").onmouseleave = changeBackColors;
-		$("skip").onclick = skipVideo;
-		$("playintro").onclick = watchVideo;
+		//$("skip").onclick = skipVideo;
+		//$("playintro").onclick = watchVideo;
 	};
 
 	function changeColors()
@@ -39,7 +39,7 @@
 		logo.style.transition = "color 2s ease";
 		logo.style.color = "#CCFFFF";
 	}
-
+/*
 	function skipVideo()
 	{
 		$("intro").style.display = "none";
@@ -84,5 +84,6 @@
 	{
 		player.stopVideo();
 	}
+*/
 }
 )();
