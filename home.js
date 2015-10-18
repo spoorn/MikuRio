@@ -48,7 +48,7 @@
 		player.stopVideo();
 		$("mainpage").style.display = "initial";
 		$("song").play();
-		document.body.style.backgroundImage = "url('kaori2.jpg')";
+		document.body.style.backgroundImage = "url('IMG_0815.jpg')";
 	}
 
 	function watchVideo()
