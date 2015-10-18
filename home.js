@@ -37,7 +37,7 @@
 	{
 		var logo = document.querySelector("h1");
 		logo.style.transition = "color 2s ease";
-		logo.style.color = "#CCFFFF";
+		logo.style.color = "#CCFFCC";
 	}
 /*
 	function skipVideo()
